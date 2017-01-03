@@ -28,13 +28,17 @@ import ParkKit
 
 class ParkKitTests: XCTestCase {
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        //// XCTAssertEqual(ParkKit().text, "Hello, World!")
+        let e = expectation(description: "Send a meta request")
+
         let park = ParkKit()
         park.fetchCities { meta, error in
-            print(meta)
-            print(error)
+            e.fulfill()
+        }
+
+        waitForExpectations(timeout: 5) { error in
+            if let error = error {
+                XCTFail("\(error)")
+            }
         }
     }
 }

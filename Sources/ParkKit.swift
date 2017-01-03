@@ -31,7 +31,39 @@ public struct ParkKit {
         self.serverURL = url
     }
 
-    public func fetchCities(_ completion: (MetaResponse?, Error?) -> Void) {
-        
+    public func fetchCities(_ completion: @escaping (MetaResponse?, ParkError?) -> Void) {
+        URLSession.shared.dataTask(with: serverURL) { (data, response, error) in
+            guard error == nil else {
+                completion(nil, .notFound)
+                return
+            }
+
+            guard let statusCode = (response as? HTTPURLResponse)?.statusCode else {
+                completion(nil, .notFound)
+                return
+            }
+
+            switch statusCode / 100 {
+            case 4:
+                return
+            case 5:
+                return
+            default:
+                break
+            }
+
+            guard let data = data else {
+                completion(nil, .notFound)
+                return
+            }
+
+            guard let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] else {
+                completion(nil, .notFound)
+                return
+            }
+
+            print(json)
+            completion(nil, nil)
+        }.resume()
     }
 }
