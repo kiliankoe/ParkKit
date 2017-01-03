@@ -12,7 +12,7 @@ import Foundation
 ///
 /// - invalidServerURL: The server at the specified URL does not seem to be running ParkAPI.
 /// - notFound: There was no data to be found for the given query.
-enum ParkError: Error {
+public enum ParkError: Error {
     case invalidServerURL
     case notFound
 }
