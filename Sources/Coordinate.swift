@@ -7,8 +7,14 @@
 //
 
 import Foundation
+import Mapper
 
-public struct Coordinate {
-    let latitude: Double
-    let longitude: Double
+public struct Coordinate: Mappable {
+    public let latitude: Double
+    public let longitude: Double
+
+    public init(map: Mapper) throws {
+        try latitude = map.from("lat")
+        try longitude = map.from("lng")
+    }
 }

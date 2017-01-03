@@ -34,7 +34,7 @@ class ParkKitTests: XCTestCase {
         park.fetchCities(onFailure: { error in
             print(error)
         }) { meta in
-            print(meta)
+            print(meta.cities.count)
             e.fulfill()
         }
 

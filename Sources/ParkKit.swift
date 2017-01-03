@@ -45,8 +45,10 @@ public struct ParkKit {
             }
 
             var cities = [City]()
-            for (name, details) in citiesDict {
-                let hasActiveSupport = 
+            for (_, details) in citiesDict {
+                guard let details = details as? NSDictionary else { continue }
+                guard let city = City.from(details) else { continue }
+                cities.append(city)
             }
 
             let response = MetaResponse(apiVersion: apiVersion, serverVersion: serverVersion, reference: reference, cities: cities)

@@ -7,18 +7,34 @@
 //
 
 import Foundation
+import Mapper
 
-public struct City {
-    let name: String
-    let coordinate: Coordinate
-    let source: URL
-    let url: URL
-    let attribution: Attribution
-    let hasActiveSupport: Bool
+public struct City: Mappable {
+    public let name: String
+    public let coordinate: Coordinate
+    public let source: URL
+    public let url: URL
+    public let attribution: Attribution?
+    public let hasActiveSupport: Bool
 
-    public struct Attribution {
+    public init(map: Mapper) throws {
+        try name = map.from("name")
+        try coordinate = map.from("coords")
+        try source = map.from("source")
+        try url = map.from("url")
+        attribution = map.optionalFrom("attribution")
+        try hasActiveSupport = map.from("active_support")
+    }
+
+    public struct Attribution: Mappable {
         let contributor: String
         let license: String
         let url: URL
+
+        public init(map: Mapper) throws {
+            try contributor = map.from("contributor")
+            try license = map.from("license")
+            try url = map.from("url")
+        }
     }
 }
