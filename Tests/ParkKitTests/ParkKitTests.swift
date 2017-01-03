@@ -31,7 +31,10 @@ class ParkKitTests: XCTestCase {
         let e = expectation(description: "Send a meta request")
 
         let park = ParkKit()
-        park.fetchCities { meta, error in
+        park.fetchCities(onFailure: { error in
+            print(error)
+        }) { meta in
+            print(meta)
             e.fulfill()
         }
 

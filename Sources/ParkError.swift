@@ -8,11 +8,11 @@
 
 import Foundation
 
-/// Possible errors encountered while using ParkKit
-///
-/// - invalidServerURL: The server at the specified URL does not seem to be running ParkAPI.
-/// - notFound: There was no data to be found for the given query.
 public enum ParkError: Error {
+    case request(Error?)
+    case server(statusCode: Int)
     case invalidServerURL
     case notFound
+    case decoding
+    case unknown
 }

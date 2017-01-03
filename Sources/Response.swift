@@ -10,8 +10,8 @@ import Foundation
 
 /// Response value containing a list of all supported cities supported by this server.
 public struct MetaResponse {
-    let apiVersion: Double
-    let serverVersion: Double
+    let apiVersion: String
+    let serverVersion: String
     let reference: String
 
     let cities: [City]
