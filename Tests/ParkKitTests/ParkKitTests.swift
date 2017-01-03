@@ -11,14 +11,13 @@ import XCTest
 import ParkKit
 
 class ParkKitTests: XCTestCase {
-    func testExample() {
+    func testMeta() {
         let e = expectation(description: "Send a meta request")
 
-        let park = ParkKit()
-        park.fetchCities(onFailure: { error in
+        ParkKit().fetchCities(onFailure: { error in
             print(error)
         }) { meta in
-            print(meta.cities.count)
+            XCTAssert(meta.cities.count >= 13)
             e.fulfill()
         }
 
@@ -34,7 +33,7 @@ class ParkKitTests: XCTestCase {
 extension ParkKitTests {
     static var allTests : [(String, (ParkKitTests) -> () throws -> Void)] {
         return [
-            ("testExample", testExample),
+            ("testMeta", testMeta),
         ]
     }
 }
