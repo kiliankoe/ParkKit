@@ -9,6 +9,6 @@
 import Foundation
 
 public struct Forecast {
-    let data: [Date: Int]
-    let version: Double
+    public let data: [Date: Int]
+    public let version: Double
 }

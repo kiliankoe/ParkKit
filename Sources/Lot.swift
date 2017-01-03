@@ -9,16 +9,16 @@
 import Foundation
 
 public struct Lot {
-    let address: String
-    let coordinate: Coordinate
-    let hasForecast: Bool
-    let free: Int
-    let total: Int
-    let id: String
-    let type: String
-    let name: String
-    let region: String
-    let state: State
+    public let address: String
+    public let coordinate: Coordinate
+    public let hasForecast: Bool
+    public let free: Int
+    public let total: Int
+    public let id: String
+    public let type: String
+    public let name: String
+    public let region: String
+    public let state: State
 
     public enum State: String {
         case open
