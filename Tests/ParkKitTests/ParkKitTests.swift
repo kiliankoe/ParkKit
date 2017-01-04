@@ -16,8 +16,8 @@ class ParkKitTests: XCTestCase {
 
         ParkKit().fetchCities(onFailure: { error in
             print(error)
-        }) { meta in
-            XCTAssert(meta.cities.count >= 13)
+        }) { response in
+            XCTAssert(response.cities.count >= 13)
             e.fulfill()
         }
 
