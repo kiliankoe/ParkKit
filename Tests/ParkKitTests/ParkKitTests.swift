@@ -27,6 +27,23 @@ class ParkKitTests: XCTestCase {
             }
         }
     }
+
+    func testDresdenLots() {
+        let e = expectation(description: "Send a lot request for Dresden")
+
+        ParkKit().fetchLots(forCity: "Dresden", onFailure: { error in
+            print(error)
+        }) { response in
+            XCTAssert(response.lots.count > 0)
+            e.fulfill()
+        }
+
+        waitForExpectations(timeout: 5) { error in
+            if let error = error {
+                XCTFail("\(error)")
+            }
+        }
+    }
 }
 
 #if os(Linux)
@@ -34,6 +51,7 @@ extension ParkKitTests {
     static var allTests : [(String, (ParkKitTests) -> () throws -> Void)] {
         return [
             ("testMeta", testMeta),
+            ("testDresdenLots", testDresdenLots),
         ]
     }
 }
