@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import CoreLocation
 
 public struct Lot {
     public let address: String
-    public let coordinate: Coordinate
+    public let coordinate: CLLocationCoordinate2D?
     public let hasForecast: Bool
     public let free: Int
     public let total: Int

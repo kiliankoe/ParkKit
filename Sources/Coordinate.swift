@@ -8,11 +8,9 @@
 
 import Foundation
 import Mapper
+import CoreLocation
 
-public struct Coordinate: Mappable {
-    public let latitude: Double
-    public let longitude: Double
-
+extension CLLocationCoordinate2D: Mappable {
     public init(map: Mapper) throws {
         try latitude = map.from("lat")
         try longitude = map.from("lng")

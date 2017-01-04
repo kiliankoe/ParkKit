@@ -8,10 +8,11 @@
 
 import Foundation
 import Mapper
+import CoreLocation
 
 public struct City: Mappable {
     public let name: String
-    public let coordinate: Coordinate
+    public let coordinate: CLLocationCoordinate2D
     public let source: URL
     public let url: URL
     public let attribution: Attribution?
