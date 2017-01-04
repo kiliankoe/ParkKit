@@ -27,10 +27,6 @@
 		398F9D401E1B2AC4002DFDB6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D3E1E1B2AC4002DFDB6 /* Response.swift */; };
 		398F9D411E1B2AC4002DFDB6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D3E1E1B2AC4002DFDB6 /* Response.swift */; };
 		398F9D421E1B2AC4002DFDB6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D3E1E1B2AC4002DFDB6 /* Response.swift */; };
-		398F9D441E1B2B0F002DFDB6 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D431E1B2B0F002DFDB6 /* Forecast.swift */; };
-		398F9D451E1B2B0F002DFDB6 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D431E1B2B0F002DFDB6 /* Forecast.swift */; };
-		398F9D461E1B2B0F002DFDB6 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D431E1B2B0F002DFDB6 /* Forecast.swift */; };
-		398F9D471E1B2B0F002DFDB6 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D431E1B2B0F002DFDB6 /* Forecast.swift */; };
 		398F9D491E1B2BEC002DFDB6 /* ParkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D481E1B2BEC002DFDB6 /* ParkError.swift */; };
 		398F9D4A1E1B2BEC002DFDB6 /* ParkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D481E1B2BEC002DFDB6 /* ParkError.swift */; };
 		398F9D4B1E1B2BEC002DFDB6 /* ParkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D481E1B2BEC002DFDB6 /* ParkError.swift */; };
@@ -91,7 +87,6 @@
 		398F9D341E1B29A5002DFDB6 /* Lot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Lot.swift; path = Sources/Lot.swift; sourceTree = "<group>"; };
 		398F9D391E1B29E5002DFDB6 /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinate.swift; path = Sources/Coordinate.swift; sourceTree = "<group>"; };
 		398F9D3E1E1B2AC4002DFDB6 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Response.swift; sourceTree = "<group>"; };
-		398F9D431E1B2B0F002DFDB6 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Forecast.swift; path = Sources/Forecast.swift; sourceTree = "<group>"; };
 		398F9D481E1B2BEC002DFDB6 /* ParkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParkError.swift; path = Sources/ParkError.swift; sourceTree = "<group>"; };
 		3DFF3F41756461C35B74D429 /* Pods_ParkKit_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkKit_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AF57F0B58FD1D794ADAB8D /* Pods-ParkKit-tvOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-tvOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-tvOS Tests/Pods-ParkKit-tvOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -200,7 +195,6 @@
 				398F9D391E1B29E5002DFDB6 /* Coordinate.swift */,
 				398F9D241E1B284C002DFDB6 /* City.swift */,
 				398F9D341E1B29A5002DFDB6 /* Lot.swift */,
-				398F9D431E1B2B0F002DFDB6 /* Forecast.swift */,
 				390102DC1E1C03B100AF6DEA /* DateFormatter+format.swift */,
 				398F9D2E1E1B2940002DFDB6 /* Tests */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
@@ -843,7 +837,6 @@
 				52D6D9981BEFF375002C0205 /* ParkKit.swift in Sources */,
 				398F9D491E1B2BEC002DFDB6 /* ParkError.swift in Sources */,
 				390102DD1E1C03B100AF6DEA /* DateFormatter+format.swift in Sources */,
-				398F9D441E1B2B0F002DFDB6 /* Forecast.swift in Sources */,
 				398F9D351E1B29A5002DFDB6 /* Lot.swift in Sources */,
 				398F9D3F1E1B2AC4002DFDB6 /* Response.swift in Sources */,
 				398F9D3A1E1B29E5002DFDB6 /* Coordinate.swift in Sources */,
@@ -866,7 +859,6 @@
 				52D6D9EA1BEFFFA4002C0205 /* ParkKit.swift in Sources */,
 				398F9D4B1E1B2BEC002DFDB6 /* ParkError.swift in Sources */,
 				390102DF1E1C03B100AF6DEA /* DateFormatter+format.swift in Sources */,
-				398F9D461E1B2B0F002DFDB6 /* Forecast.swift in Sources */,
 				398F9D371E1B29A5002DFDB6 /* Lot.swift in Sources */,
 				398F9D411E1B2AC4002DFDB6 /* Response.swift in Sources */,
 				398F9D3C1E1B29E5002DFDB6 /* Coordinate.swift in Sources */,
@@ -881,7 +873,6 @@
 				52D6DA091BF00081002C0205 /* ParkKit.swift in Sources */,
 				398F9D4C1E1B2BEC002DFDB6 /* ParkError.swift in Sources */,
 				390102E01E1C03B100AF6DEA /* DateFormatter+format.swift in Sources */,
-				398F9D471E1B2B0F002DFDB6 /* Forecast.swift in Sources */,
 				398F9D381E1B29A5002DFDB6 /* Lot.swift in Sources */,
 				398F9D421E1B2AC4002DFDB6 /* Response.swift in Sources */,
 				398F9D3D1E1B29E5002DFDB6 /* Coordinate.swift in Sources */,
@@ -896,7 +887,6 @@
 				52D6DA261BF00118002C0205 /* ParkKit.swift in Sources */,
 				398F9D4A1E1B2BEC002DFDB6 /* ParkError.swift in Sources */,
 				390102DE1E1C03B100AF6DEA /* DateFormatter+format.swift in Sources */,
-				398F9D451E1B2B0F002DFDB6 /* Forecast.swift in Sources */,
 				398F9D361E1B29A5002DFDB6 /* Lot.swift in Sources */,
 				398F9D401E1B2AC4002DFDB6 /* Response.swift in Sources */,
 				398F9D3B1E1B29E5002DFDB6 /* Coordinate.swift in Sources */,

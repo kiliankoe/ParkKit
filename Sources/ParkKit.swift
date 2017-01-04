@@ -69,6 +69,42 @@ public struct ParkKit {
         }
     }
 
+    public func fetchForecast(forLot lot: String, inCity city: String, startingAt start: Date, endingAt end: Date, onFailure: @escaping (ParkError) -> Void, onSuccess: @escaping (ForecastResponse) -> Void) {
+        let iso = DateFormatter.iso()
+        guard let url = URL(string: "\(city)/\(lot)/timespan?from=\(iso.string(from: start))&to=\(iso.string(from: end))", relativeTo: serverURL) else {
+            onFailure(.invalidServerURL)
+            return
+        }
+
+        fetchJSON(url: url, onFailure: onFailure) { json in
+            guard let version = (json["version"] as? Double) else {
+                onFailure(.decoding)
+                return
+            }
+
+            guard let data = json["data"] as? [String: String] else {
+                onFailure(.decoding)
+                return
+            }
+
+            var forecast = [(Date, Int)]()
+            for (key, val) in data {
+                guard let date = iso.date(from: key) else { continue }
+                guard let load = Int(val) else { continue }
+
+                forecast.append((date, load))
+            }
+
+            // The fact that these were stored in a dictionary throws off sorting, but it's definitely nice to have here.
+            forecast.sort { (first, second) in
+                first.0 < second.0
+            }
+
+            let response = ForecastResponse(version: version, forecast: forecast)
+            onSuccess(response)
+        }
+    }
+
     func fetchJSON(url: URL, onFailure fail: @escaping (ParkError) -> Void, onSuccess succeed: @escaping (JSON) -> Void) {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {

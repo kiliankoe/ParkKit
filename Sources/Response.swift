@@ -27,6 +27,12 @@ public struct LotResponse {
     public let lots: [Lot]
 }
 
+/// Forecast response value containing a list of forecast values.
+public struct ForecastResponse {
+    public let version: Double
+    public let forecast: [(Date, Int)]
+}
+
 public struct StatusResponse {
     public let load: [Double]
     public let serverTime: Date

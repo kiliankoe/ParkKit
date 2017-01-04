@@ -44,6 +44,29 @@ class ParkKitTests: XCTestCase {
             }
         }
     }
+
+    func testForecast() {
+        let e = expectation(description: "Send a forecast request for Centrum Galerie in Dresden")
+
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd"
+
+        let startingDate = df.date(from: "2015-12-26")!
+        let endingDate = df.date(from: "2015-12-27")!
+
+        ParkKit().fetchForecast(forLot: "dresdencentrumgalerie", inCity: "Dresden", startingAt: startingDate, endingAt: endingDate, onFailure: { error in
+            print(error)
+        }) { response in
+            XCTAssert(response.forecast.count > 0)
+            e.fulfill()
+        }
+
+        waitForExpectations(timeout: 5) { error in
+            if let error = error {
+                XCTFail("\(error)")
+            }
+        }
+    }
 }
 
 #if os(Linux)
