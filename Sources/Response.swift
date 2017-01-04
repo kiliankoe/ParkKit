@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Response value containing a list of all supported cities supported by this server.
+/// Meta response value containing a list of all supported cities supported by this server.
 public struct MetaResponse {
     public let apiVersion: String
     public let serverVersion: String
@@ -17,8 +17,11 @@ public struct MetaResponse {
     public let cities: [City]
 }
 
+/// Lot response value containing a list of all lots for a given city and timestamps for when the data was last updated.
 public struct LotResponse {
+    /// Timestamp when the data was downloaded from the city's server. Should never be more than ~5 minutes ago.
     public let lastDownloaded: Date
+    /// Timestamp when the data was presumably last updated on the city's server.
     public let lastUpdated: Date
 
     public let lots: [Lot]
