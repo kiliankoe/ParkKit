@@ -1,0 +1,19 @@
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
+osx_image: xcode8
+language: objective-c
+
+before_install:
+- gem install xcpretty
+
+script:
+- xcodebuild -workspace ParkKit.xcworkspace -scheme ParkKit-iOS | xcpretty
+- xcodebuild -workspace ParkKit.xcworkspace -scheme ParkKit-macOS | xcpretty
+- xcodebuild test -workspace ParkKit.xcworkspace -scheme ParkKit-macOS | xcpretty
+- pod lib lint
+# - swift test
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
