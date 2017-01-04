@@ -58,7 +58,13 @@ ParkKit is available through Cocoapods. To install it, simply add the following 
 pod "ParkKit"
 ```
 
-It should also be available via Carthage and SPM, although I have not been able to verify this.
+You can also use Swift Package Manager. For that, add the following to your dependencies in your Package.swift:
+
+```swift
+.Package(url: "https://github.com/kiliankoe/ParkKit", majorVersion: 0)
+```
+
+It should also be available via Carthage, although I have not been able to verify this.
 
 ## Contributors
 
