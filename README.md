@@ -17,7 +17,7 @@ let park = ParkKit() // uses the default server at parkendd.de
 ```
 
 ```swift
-park.fetchCities(onFailure: {error in
+park.fetchCities(onFailure: { error in
 	print(error)
 }) { response in
 	print(response.cities)
@@ -33,7 +33,7 @@ park.fetchCities(onFailure: {error in
 ```
 
 ```swift
-park.fetchLots(forCity: "Dresden", onFailure: {error in
+park.fetchLots(forCity: "Dresden", onFailure: { error in
 	print(error)
 }) { response in
 	print(response.lots)
