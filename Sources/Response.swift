@@ -10,10 +10,14 @@ import Foundation
 
 /// Meta response value containing a list of all supported cities supported by this server.
 public struct MetaResponse {
+    /// Current API version.
     public let apiVersion: String
+    /// Current server software version, e.g. the version of ParkAPI running on the server.
     public let serverVersion: String
+    /// A reference to the instance running on the server. Possibly a project URL.
     public let reference: String
 
+    /// The actual list of cities and their data.
     public let cities: [City]
 }
 
@@ -24,21 +28,14 @@ public struct LotResponse {
     /// Timestamp when the data was presumably last updated on the city's server.
     public let lastUpdated: Date
 
+    /// The actual list of lots and their data.
     public let lots: [Lot]
 }
 
 /// Forecast response value containing a list of forecast values.
 public struct ForecastResponse {
+    /// Version of the forecast data.
     public let version: Double
+    /// The actual forecast data as a list of dates and load values.
     public let forecast: [(Date, Int)]
-}
-
-public struct StatusResponse {
-    public let load: [Double]
-    public let serverTime: Date
-    public let status: Status
-
-    public enum Status: String {
-        case online
-    }
 }

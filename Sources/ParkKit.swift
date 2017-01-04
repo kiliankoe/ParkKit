@@ -10,13 +10,22 @@ import Foundation
 
 typealias JSON = [String: Any]
 
+/// All methods to fetch data from the server are built into this type.
 public struct ParkKit {
-    let serverURL: URL
+    internal let serverURL: URL
 
+    /// Initialize a new client with a server URL. Defaults to server at parkendd.de if no URL is provided.
+    ///
+    /// - Parameter url: optional custom server URL
     public init(withURL url: URL = URL(string: "https://api.parkendd.de")!) {
         self.serverURL = url
     }
 
+    /// Fetch all cities known to the server.
+    ///
+    /// - Parameters:
+    ///   - onFailure: failure handler, is handed a `ParkError`
+    ///   - onSuccess: success handler, is handed a `MetaResponse` containing further information
     public func fetchCities(onFailure: @escaping (ParkError) -> Void, onSuccess: @escaping (MetaResponse) -> Void) {
         fetchJSON(url: serverURL, onFailure: onFailure) { json in
             let apiVersion = (json["api_version"] as? String) ?? ""
@@ -40,6 +49,12 @@ public struct ParkKit {
         }
     }
 
+    /// Fetch all known lots for a given city.
+    ///
+    /// - Parameters:
+    ///   - city: city name
+    ///   - onFailure: failure handler, is handed a `ParkError`
+    ///   - onSuccess: success handler, is handed a `LotResponse` containing further information
     public func fetchLots(forCity city: String, onFailure: @escaping (ParkError) -> Void, onSuccess: @escaping (LotResponse) -> Void) {
         guard let url = URL(string: city, relativeTo: serverURL) else {
             onFailure(.invalidServerURL)
@@ -69,6 +84,15 @@ public struct ParkKit {
         }
     }
 
+    /// Fetch forecast data for a given lot and city.
+    ///
+    /// - Parameters:
+    ///   - lot: lot identifier
+    ///   - city: city name
+    ///   - start: starting date
+    ///   - end: ending date
+    ///   - onFailure: failure handler, is handed a `ParkError`
+    ///   - onSuccess: success handler, is handed a `ForecastResponse` containing further information
     public func fetchForecast(forLot lot: String, inCity city: String, startingAt start: Date, endingAt end: Date, onFailure: @escaping (ParkError) -> Void, onSuccess: @escaping (ForecastResponse) -> Void) {
         let iso = DateFormatter.iso()
         guard let url = URL(string: "\(city)/\(lot)/timespan?from=\(iso.string(from: start))&to=\(iso.string(from: end))", relativeTo: serverURL) else {
@@ -105,7 +129,7 @@ public struct ParkKit {
         }
     }
 
-    func fetchJSON(url: URL, onFailure fail: @escaping (ParkError) -> Void, onSuccess succeed: @escaping (JSON) -> Void) {
+    internal func fetchJSON(url: URL, onFailure fail: @escaping (ParkError) -> Void, onSuccess succeed: @escaping (JSON) -> Void) {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 fail(.request(error))
