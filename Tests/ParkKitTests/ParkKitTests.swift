@@ -75,6 +75,7 @@ extension ParkKitTests {
         return [
             ("testMeta", testMeta),
             ("testDresdenLots", testDresdenLots),
+            ("testForecast", testForecast),
         ]
     }
 }
