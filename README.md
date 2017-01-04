@@ -13,6 +13,7 @@ This is a wrapper for the API provided by [ParkAPI](https://github.com/offenesdr
 
 ```swift
 let park = ParkKit() // uses the default server at parkendd.de
+// let park = ParkKit(withURL: URL(string: "https://your_server.com")!) // uses your server
 ```
 
 ```swift
