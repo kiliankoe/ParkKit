@@ -10,7 +10,7 @@ import Foundation
 import Mapper
 import CoreLocation
 
-public struct City: Mappable {
+public struct City {
     public let name: String
     public let coordinate: CLLocationCoordinate2D
     public let source: URL
@@ -18,6 +18,14 @@ public struct City: Mappable {
     public let attribution: Attribution?
     public let hasActiveSupport: Bool
 
+    public struct Attribution {
+        let contributor: String
+        let license: String
+        let url: URL
+    }
+}
+
+extension City: Mappable {
     public init(map: Mapper) throws {
         try name = map.from("name")
         try coordinate = map.from("coords")
@@ -26,16 +34,12 @@ public struct City: Mappable {
         attribution = map.optionalFrom("attribution")
         try hasActiveSupport = map.from("active_support")
     }
+}
 
-    public struct Attribution: Mappable {
-        let contributor: String
-        let license: String
-        let url: URL
-
-        public init(map: Mapper) throws {
-            try contributor = map.from("contributor")
-            try license = map.from("license")
-            try url = map.from("url")
-        }
+extension City.Attribution: Mappable {
+    public init(map: Mapper) throws {
+        try contributor = map.from("contributor")
+        try license = map.from("license")
+        try url = map.from("url")
     }
 }
