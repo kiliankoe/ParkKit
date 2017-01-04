@@ -10,7 +10,7 @@ cache:
 
 before_install:
 - gem install xcpretty
-# - pod repo update
+- pod repo update
 
 script:
 - xcodebuild -workspace ParkKit.xcworkspace -scheme ParkKit-iOS | xcpretty
