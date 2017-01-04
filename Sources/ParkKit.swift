@@ -8,8 +8,6 @@
 
 import Foundation
 
-typealias JSON = [String: Any]
-
 /// All methods to fetch data from the server are built into this type.
 public struct ParkKit {
     internal let serverURL: URL
@@ -129,7 +127,7 @@ public struct ParkKit {
         }
     }
 
-    internal func fetchJSON(url: URL, onFailure fail: @escaping (ParkError) -> Void, onSuccess succeed: @escaping (JSON) -> Void) {
+    internal func fetchJSON(url: URL, onFailure fail: @escaping (ParkError) -> Void, onSuccess succeed: @escaping ([String: Any]) -> Void) {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 fail(.request(error))
