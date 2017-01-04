@@ -7,7 +7,7 @@
 [![Docs](https://img.shields.io/cocoapods/metrics/doc-percent/ParkKit.svg?style=flat-square)](http://cocoadocs.org/docsets/ParkKit)
 [![Codecov](https://img.shields.io/codecov/c/github/kiliankoe/ParkKit.svg?style=flat-square)](https://codecov.io/gh/kiliankoe/ParkKit)
 
-This is a wrapper for the API provided by [ParkAPI](https://github.com/offenesdresden/ParkAPI) for anything written in Swift. The primary purpose is to be used by [ParkenDD](https://github.com/kiliankoe/ParkenDD).
+This is a wrapper for the API provided by [ParkAPI](https://github.com/offenesdresden/ParkAPI) for anything written in Swift. It's primary purpose is to be used by [ParkenDD](https://github.com/kiliankoe/ParkenDD).
 
 ## Example
 

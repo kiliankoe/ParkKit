@@ -1,9 +1,10 @@
 Pod::Spec.new do |s|
   s.name        = "ParkKit"
   s.version     = "0.1"
-  s.summary     = ""
+  s.summary     = "ParkAPI wrapper for Swift apps"
   s.description = <<-DESC
-    Your description here.
+    This is a wrapper for the API provided by [ParkAPI](https://github.com/offenesdresden/ParkAPI) for anything written in Swift.
+    It's primary purpose is to be used by [ParkenDD](https://github.com/kiliankoe/ParkenDD).
   DESC
 
   s.homepage         = "https://github.com/kiliankoe/ParkKit"
