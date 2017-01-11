@@ -38,12 +38,38 @@ public struct Lot {
     /// - open: Open for business.
     /// - closed: Closed, new arrivals can't park here.
     /// - nodata: The source provides no information.
-    /// - unknown: Unknown.
+    /// - unknown: Unknown. Like wat.
     public enum State: String {
         case open
         case closed
         case nodata
         case unknown
+    }
+
+    /// Percentage value for how full the lot currently is
+    var loadPercentage: Double {
+        if total > 0 {
+            return Double(free) / Double(total)
+        }
+        return 0
+    }
+
+    /// Calculate the distance between this lot and a given location.
+    ///
+    /// - Parameter location: perhaps the user location?
+    /// - Returns: distance in meters
+    func distance(from location: CLLocation) -> Double? {
+        guard let coord = coordinate else { return nil }
+        let lotLocation = CLLocation(latitude: coord.latitude, longitude: coord.longitude)
+        return location.distance(from: lotLocation)
+    }
+
+    /// Small helper returning `free` or 0 if the lot is closed
+    var freeRegardingClosed: Int {
+        if state == .closed {
+            return 0
+        }
+        return free
     }
 }
 
