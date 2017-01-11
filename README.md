@@ -45,6 +45,26 @@ park.fetchLots(forCity: "Dresden", onFailure: { error in
 //       ...
 ```
 
+```swift
+let startingDate = Date()
+let endingDate = startingDate.addingTimeInterval(60 * 60 * 24) // 24 hours later
+
+park.fetchForecast(forLot: "dresdencentrumgalerie", inCity: "Dresden", startingAt: startingDate, endingAt: endingDate, onFailure: { error in
+    print(error)
+}) { response in
+    print(response.forecast)
+}
+
+// ▿ 97 elements
+//   ▿ (2 elements)
+//     - .0: 2017-01-11 00:00:00 +0000
+//     - .1: 13
+//   ▿ (2 elements)
+//     - .0: 2017-01-11 00:15:00 +0000
+//     - .1: 12
+//   ...
+```
+
 ## Requirements
 
 Should you be hosting your own version of the ParkAPI server and using this on iOS, you might have to set up an ATS exception if you don't serve the data via HTTPS.
