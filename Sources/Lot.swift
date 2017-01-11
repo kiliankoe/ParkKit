@@ -49,7 +49,7 @@ public struct Lot {
     /// Percentage value for how full the lot currently is
     public var loadPercentage: Double {
         if total > 0 {
-            return Double(free) / Double(total)
+            return 1 - Double(free) / Double(total)
         }
         return 0
     }
