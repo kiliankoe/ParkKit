@@ -42,6 +42,8 @@ public struct ParkKit {
                 cities.append(city)
             }
 
+            cities.sort { $0.name < $1.name }
+
             let response = MetaResponse(apiVersion: apiVersion, serverVersion: serverVersion, reference: reference, cities: cities)
             onSuccess(response)
         }
