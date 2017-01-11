@@ -47,7 +47,7 @@ public struct Lot {
     }
 
     /// Percentage value for how full the lot currently is
-    var loadPercentage: Double {
+    public var loadPercentage: Double {
         if total > 0 {
             return Double(free) / Double(total)
         }
@@ -58,14 +58,14 @@ public struct Lot {
     ///
     /// - Parameter location: perhaps the user location?
     /// - Returns: distance in meters
-    func distance(from location: CLLocation) -> Double? {
+    public func distance(from location: CLLocation) -> Double? {
         guard let coord = coordinate else { return nil }
         let lotLocation = CLLocation(latitude: coord.latitude, longitude: coord.longitude)
         return location.distance(from: lotLocation)
     }
 
     /// Small helper returning `free` or 0 if the lot is closed
-    var freeRegardingClosed: Int {
+    public var freeRegardingClosed: Int {
         if state == .closed {
             return 0
         }
