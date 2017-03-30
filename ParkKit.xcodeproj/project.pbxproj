@@ -34,23 +34,20 @@
 		398F9D4A1E1B2BEC002DFDB6 /* ParkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D481E1B2BEC002DFDB6 /* ParkError.swift */; };
 		398F9D4B1E1B2BEC002DFDB6 /* ParkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D481E1B2BEC002DFDB6 /* ParkError.swift */; };
 		398F9D4C1E1B2BEC002DFDB6 /* ParkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D481E1B2BEC002DFDB6 /* ParkError.swift */; };
-		401165934564CE69DD365266 /* Pods_ParkKit_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32F5ED8FB63C5B0CB2E54BB /* Pods_ParkKit_iOS_Tests.framework */; };
-		420E44821F56784ED408E3D1 /* Pods_ParkKit_macOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337266062D8E0C26367604DD /* Pods_ParkKit_macOS_Tests.framework */; };
+		39D18B011E8D26C2001A99FE /* Marshal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D18B001E8D26C2001A99FE /* Marshal.framework */; };
+		39D18B031E8D2702001A99FE /* Marshal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D18B021E8D2702001A99FE /* Marshal.framework */; };
+		39D18B051E8D2708001A99FE /* Marshal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D18B041E8D2708001A99FE /* Marshal.framework */; };
+		39D18B071E8D270E001A99FE /* Marshal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D18B061E8D270E001A99FE /* Marshal.framework */; };
 		52D6D9871BEFF229002C0205 /* ParkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* ParkKit.framework */; };
 		52D6D9981BEFF375002C0205 /* ParkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* ParkKit.swift */; };
 		52D6D99B1BEFF375002C0205 /* ParkKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* ParkKitTests.swift */; };
 		52D6D9EA1BEFFFA4002C0205 /* ParkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* ParkKit.swift */; };
 		52D6DA091BF00081002C0205 /* ParkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* ParkKit.swift */; };
 		52D6DA261BF00118002C0205 /* ParkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* ParkKit.swift */; };
-		8DCA54CA71A420CABEE59945 /* Pods_ParkKit_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF3F41756461C35B74D429 /* Pods_ParkKit_macOS.framework */; };
-		9D919A96036C79DFB521760E /* Pods_ParkKit_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329C76C9D8C0A4EF95317E2B /* Pods_ParkKit_watchOS.framework */; };
-		A2600DCD350BF59D9FC76BE3 /* Pods_ParkKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA332F8CDDA0B4327FE7EE58 /* Pods_ParkKit_iOS.framework */; };
 		DD7502861C68FDDC006590AF /* ParkKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* ParkKitTests.swift */; };
 		DD7502881C68FEDE006590AF /* ParkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* ParkKit.framework */; };
 		DD7502921C690C7A006590AF /* ParkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* ParkKit.framework */; };
 		DD75029A1C690CBE006590AF /* ParkKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* ParkKitTests.swift */; };
-		EA90F8125A3F79A92208CE88 /* Pods_ParkKit_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 971CF2D21CFC22581E7E7CB1 /* Pods_ParkKit_tvOS_Tests.framework */; };
-		FDAA4BDC9167DD01F8C5AFF0 /* Pods_ParkKit_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741C45C80D1A55122D83AE18 /* Pods_ParkKit_tvOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,13 +75,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0DEEF804FE9CE41E53A76CFC /* Pods-ParkKit-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-macOS/Pods-ParkKit-macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		12FD070FFDA55F466503BBF7 /* Pods-ParkKit-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-watchOS/Pods-ParkKit-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
-		329C76C9D8C0A4EF95317E2B /* Pods_ParkKit_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkKit_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		337266062D8E0C26367604DD /* Pods_ParkKit_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkKit_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		363EE52AC1AE452F072ECD47 /* Pods-ParkKit-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-iOS/Pods-ParkKit-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		36B07DD28CD54AF9919DB2A8 /* Pods-ParkKit-tvOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-tvOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-tvOS Tests/Pods-ParkKit-tvOS Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3786F67AD8EA1DE365001493 /* Pods-ParkKit-iOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-iOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-iOS Tests/Pods-ParkKit-iOS Tests.release.xcconfig"; sourceTree = "<group>"; };
 		390102DC1E1C03B100AF6DEA /* DateFormatter+format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateFormatter+format.swift"; path = "Sources/DateFormatter+format.swift"; sourceTree = "<group>"; };
 		3903AE731E265ED5001A8D87 /* LotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LotTests.swift; path = Tests/ParkKitTests/LotTests.swift; sourceTree = "<group>"; };
 		398F9D241E1B284C002DFDB6 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = City.swift; path = Sources/City.swift; sourceTree = "<group>"; };
@@ -92,9 +82,10 @@
 		398F9D391E1B29E5002DFDB6 /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinate.swift; path = Sources/Coordinate.swift; sourceTree = "<group>"; };
 		398F9D3E1E1B2AC4002DFDB6 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Response.swift; sourceTree = "<group>"; };
 		398F9D481E1B2BEC002DFDB6 /* ParkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParkError.swift; path = Sources/ParkError.swift; sourceTree = "<group>"; };
-		3DFF3F41756461C35B74D429 /* Pods_ParkKit_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkKit_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		40AF57F0B58FD1D794ADAB8D /* Pods-ParkKit-tvOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-tvOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-tvOS Tests/Pods-ParkKit-tvOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4632EA33E347EB709B9F534E /* Pods-ParkKit-iOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-iOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-iOS Tests/Pods-ParkKit-iOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		39D18B001E8D26C2001A99FE /* Marshal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Marshal.framework; path = Carthage/Build/iOS/Marshal.framework; sourceTree = "<group>"; };
+		39D18B021E8D2702001A99FE /* Marshal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Marshal.framework; path = Carthage/Build/Mac/Marshal.framework; sourceTree = "<group>"; };
+		39D18B041E8D2708001A99FE /* Marshal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Marshal.framework; path = Carthage/Build/watchOS/Marshal.framework; sourceTree = "<group>"; };
+		39D18B061E8D270E001A99FE /* Marshal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Marshal.framework; path = Carthage/Build/tvOS/Marshal.framework; sourceTree = "<group>"; };
 		52D6D97C1BEFF229002C0205 /* ParkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* ParkKit-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ParkKit-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9961BEFF375002C0205 /* ParkKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParkKit.swift; path = Sources/ParkKit.swift; sourceTree = "<group>"; };
@@ -102,21 +93,10 @@
 		52D6D9E21BEFFF6E002C0205 /* ParkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* ParkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* ParkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F037450391BA9D520889090 /* Pods-ParkKit-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-tvOS/Pods-ParkKit-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		741C45C80D1A55122D83AE18 /* Pods_ParkKit_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkKit_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DD56B198B18D45F52ECA34C /* Pods-ParkKit-macOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-macOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-macOS Tests/Pods-ParkKit-macOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		826E452924E68CBE54409058 /* Pods-ParkKit-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-macOS/Pods-ParkKit-macOS.release.xcconfig"; sourceTree = "<group>"; };
-		971CF2D21CFC22581E7E7CB1 /* Pods_ParkKit_tvOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkKit_tvOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7B96A78C485D7E7DE525EA6 /* Pods-ParkKit-macOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-macOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-macOS Tests/Pods-ParkKit-macOS Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AA332F8CDDA0B4327FE7EE58 /* Pods_ParkKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA38E08F8CCE84D0A296A3A3 /* Pods-ParkKit-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-iOS/Pods-ParkKit-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* ParkKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ParkKit.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* ParkKitTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ParkKitTests.plist; sourceTree = "<group>"; };
-		AE447F2029FBED12EDBBA91E /* Pods-ParkKit-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-watchOS/Pods-ParkKit-watchOS.release.xcconfig"; sourceTree = "<group>"; };
-		C32F5ED8FB63C5B0CB2E54BB /* Pods_ParkKit_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkKit_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD75027A1C68FCFC006590AF /* ParkKit-macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ParkKit-macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD75028D1C690C7A006590AF /* ParkKit-tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ParkKit-tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E76E9C8AF772C0CFDE8D946C /* Pods-ParkKit-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkKit-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkKit-tvOS/Pods-ParkKit-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2600DCD350BF59D9FC76BE3 /* Pods_ParkKit_iOS.framework in Frameworks */,
+				39D18B011E8D26C2001A99FE /* Marshal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +113,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				52D6D9871BEFF229002C0205 /* ParkKit.framework in Frameworks */,
-				401165934564CE69DD365266 /* Pods_ParkKit_iOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D919A96036C79DFB521760E /* Pods_ParkKit_watchOS.framework in Frameworks */,
+				39D18B051E8D2708001A99FE /* Marshal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDAA4BDC9167DD01F8C5AFF0 /* Pods_ParkKit_tvOS.framework in Frameworks */,
+				39D18B071E8D270E001A99FE /* Marshal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DCA54CA71A420CABEE59945 /* Pods_ParkKit_macOS.framework in Frameworks */,
+				39D18B031E8D2702001A99FE /* Marshal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +145,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD7502881C68FEDE006590AF /* ParkKit.framework in Frameworks */,
-				420E44821F56784ED408E3D1 /* Pods_ParkKit_macOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +153,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD7502921C690C7A006590AF /* ParkKit.framework in Frameworks */,
-				EA90F8125A3F79A92208CE88 /* Pods_ParkKit_tvOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +181,6 @@
 				398F9D2E1E1B2940002DFDB6 /* Tests */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
 				52D6D97D1BEFF229002C0205 /* Products */,
-				C5C64CEF9849A2B2602DDBBA /* Pods */,
 				994A52265FAFA8B8B1FB2E46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -235,36 +211,12 @@
 		994A52265FAFA8B8B1FB2E46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AA332F8CDDA0B4327FE7EE58 /* Pods_ParkKit_iOS.framework */,
-				C32F5ED8FB63C5B0CB2E54BB /* Pods_ParkKit_iOS_Tests.framework */,
-				3DFF3F41756461C35B74D429 /* Pods_ParkKit_macOS.framework */,
-				337266062D8E0C26367604DD /* Pods_ParkKit_macOS_Tests.framework */,
-				741C45C80D1A55122D83AE18 /* Pods_ParkKit_tvOS.framework */,
-				971CF2D21CFC22581E7E7CB1 /* Pods_ParkKit_tvOS_Tests.framework */,
-				329C76C9D8C0A4EF95317E2B /* Pods_ParkKit_watchOS.framework */,
+				39D18B061E8D270E001A99FE /* Marshal.framework */,
+				39D18B041E8D2708001A99FE /* Marshal.framework */,
+				39D18B021E8D2702001A99FE /* Marshal.framework */,
+				39D18B001E8D26C2001A99FE /* Marshal.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C5C64CEF9849A2B2602DDBBA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				363EE52AC1AE452F072ECD47 /* Pods-ParkKit-iOS.debug.xcconfig */,
-				AA38E08F8CCE84D0A296A3A3 /* Pods-ParkKit-iOS.release.xcconfig */,
-				4632EA33E347EB709B9F534E /* Pods-ParkKit-iOS Tests.debug.xcconfig */,
-				3786F67AD8EA1DE365001493 /* Pods-ParkKit-iOS Tests.release.xcconfig */,
-				0DEEF804FE9CE41E53A76CFC /* Pods-ParkKit-macOS.debug.xcconfig */,
-				826E452924E68CBE54409058 /* Pods-ParkKit-macOS.release.xcconfig */,
-				7DD56B198B18D45F52ECA34C /* Pods-ParkKit-macOS Tests.debug.xcconfig */,
-				A7B96A78C485D7E7DE525EA6 /* Pods-ParkKit-macOS Tests.release.xcconfig */,
-				E76E9C8AF772C0CFDE8D946C /* Pods-ParkKit-tvOS.debug.xcconfig */,
-				5F037450391BA9D520889090 /* Pods-ParkKit-tvOS.release.xcconfig */,
-				40AF57F0B58FD1D794ADAB8D /* Pods-ParkKit-tvOS Tests.debug.xcconfig */,
-				36B07DD28CD54AF9919DB2A8 /* Pods-ParkKit-tvOS Tests.release.xcconfig */,
-				12FD070FFDA55F466503BBF7 /* Pods-ParkKit-watchOS.debug.xcconfig */,
-				AE447F2029FBED12EDBBA91E /* Pods-ParkKit-watchOS.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		DD7502721C68FC1B006590AF /* Frameworks */ = {
@@ -321,12 +273,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D6D9901BEFF229002C0205 /* Build configuration list for PBXNativeTarget "ParkKit-iOS" */;
 			buildPhases = (
-				2C4C3F68695742C205F00913 /* [CP] Check Pods Manifest.lock */,
 				52D6D9771BEFF229002C0205 /* Sources */,
 				52D6D9781BEFF229002C0205 /* Frameworks */,
 				52D6D9791BEFF229002C0205 /* Headers */,
 				52D6D97A1BEFF229002C0205 /* Resources */,
-				A38F0E9082C69FE95E587670 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,12 +291,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D6D9931BEFF229002C0205 /* Build configuration list for PBXNativeTarget "ParkKit-iOS Tests" */;
 			buildPhases = (
-				AB72DA3688F38E386FD15AAB /* [CP] Check Pods Manifest.lock */,
 				52D6D9821BEFF229002C0205 /* Sources */,
 				52D6D9831BEFF229002C0205 /* Frameworks */,
 				52D6D9841BEFF229002C0205 /* Resources */,
-				2D3FC4BF444C94200C1E5A25 /* [CP] Embed Pods Frameworks */,
-				3FD9245C998DE7F20BEF0C12 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,12 +309,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D6D9E71BEFFF6E002C0205 /* Build configuration list for PBXNativeTarget "ParkKit-watchOS" */;
 			buildPhases = (
-				6F428CA650C800FEAAA01D03 /* [CP] Check Pods Manifest.lock */,
 				52D6D9DD1BEFFF6E002C0205 /* Sources */,
 				52D6D9DE1BEFFF6E002C0205 /* Frameworks */,
 				52D6D9DF1BEFFF6E002C0205 /* Headers */,
 				52D6D9E01BEFFF6E002C0205 /* Resources */,
-				7BBA6570DA2F5B232E4E838D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -382,12 +327,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D6DA011BEFFFBE002C0205 /* Build configuration list for PBXNativeTarget "ParkKit-tvOS" */;
 			buildPhases = (
-				7BA27FF644D9EE26F32328CF /* [CP] Check Pods Manifest.lock */,
 				52D6D9EB1BEFFFBE002C0205 /* Sources */,
 				52D6D9EC1BEFFFBE002C0205 /* Frameworks */,
 				52D6D9ED1BEFFFBE002C0205 /* Headers */,
 				52D6D9EE1BEFFFBE002C0205 /* Resources */,
-				65FE9A1503702E1DC87BA186 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -402,12 +345,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D6DA201BF000BD002C0205 /* Build configuration list for PBXNativeTarget "ParkKit-macOS" */;
 			buildPhases = (
-				DA8B9F35548C88E9E0F030BC /* [CP] Check Pods Manifest.lock */,
 				52D6DA0A1BF000BD002C0205 /* Sources */,
 				52D6DA0B1BF000BD002C0205 /* Frameworks */,
 				52D6DA0C1BF000BD002C0205 /* Headers */,
 				52D6DA0D1BF000BD002C0205 /* Resources */,
-				4946F7D71308AD628667D7A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -422,12 +363,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD7502821C68FCFC006590AF /* Build configuration list for PBXNativeTarget "ParkKit-macOS Tests" */;
 			buildPhases = (
-				D487E615461E4A44A9D15779 /* [CP] Check Pods Manifest.lock */,
 				DD7502761C68FCFC006590AF /* Sources */,
 				DD7502771C68FCFC006590AF /* Frameworks */,
 				DD7502781C68FCFC006590AF /* Resources */,
-				7F39C8552DC39DC2BCEBAF74 /* [CP] Embed Pods Frameworks */,
-				96CA887041DF6B812D2C2744 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -443,12 +381,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD7502951C690C7A006590AF /* Build configuration list for PBXNativeTarget "ParkKit-tvOS Tests" */;
 			buildPhases = (
-				5BD2379FAEDCA03DCE83D16F /* [CP] Check Pods Manifest.lock */,
 				DD7502891C690C7A006590AF /* Sources */,
 				DD75028A1C690C7A006590AF /* Frameworks */,
 				DD75028B1C690C7A006590AF /* Resources */,
-				41D9000A9E01E50A7B1DAAB8 /* [CP] Embed Pods Frameworks */,
-				357B4EED298AEA8FA79D2CCC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -574,264 +509,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2C4C3F68695742C205F00913 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		2D3FC4BF444C94200C1E5A25 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkKit-iOS Tests/Pods-ParkKit-iOS Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		357B4EED298AEA8FA79D2CCC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkKit-tvOS Tests/Pods-ParkKit-tvOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3FD9245C998DE7F20BEF0C12 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkKit-iOS Tests/Pods-ParkKit-iOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		41D9000A9E01E50A7B1DAAB8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkKit-tvOS Tests/Pods-ParkKit-tvOS Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4946F7D71308AD628667D7A4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkKit-macOS/Pods-ParkKit-macOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5BD2379FAEDCA03DCE83D16F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		65FE9A1503702E1DC87BA186 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkKit-tvOS/Pods-ParkKit-tvOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6F428CA650C800FEAAA01D03 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7BA27FF644D9EE26F32328CF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7BBA6570DA2F5B232E4E838D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkKit-watchOS/Pods-ParkKit-watchOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F39C8552DC39DC2BCEBAF74 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkKit-macOS Tests/Pods-ParkKit-macOS Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		96CA887041DF6B812D2C2744 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkKit-macOS Tests/Pods-ParkKit-macOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A38F0E9082C69FE95E587670 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkKit-iOS/Pods-ParkKit-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB72DA3688F38E386FD15AAB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D487E615461E4A44A9D15779 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DA8B9F35548C88E9E0F030BC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52D6D9771BEFF229002C0205 /* Sources */ = {
@@ -1035,7 +712,6 @@
 		};
 		52D6D9911BEFF229002C0205 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 363EE52AC1AE452F072ECD47 /* Pods-ParkKit-iOS.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -1044,6 +720,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Configs/ParkKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1058,7 +738,6 @@
 		};
 		52D6D9921BEFF229002C0205 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA38E08F8CCE84D0A296A3A3 /* Pods-ParkKit-iOS.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -1067,6 +746,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Configs/ParkKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1081,7 +764,6 @@
 		};
 		52D6D9941BEFF229002C0205 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4632EA33E347EB709B9F534E /* Pods-ParkKit-iOS Tests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Configs/ParkKitTests.plist;
@@ -1095,7 +777,6 @@
 		};
 		52D6D9951BEFF229002C0205 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3786F67AD8EA1DE365001493 /* Pods-ParkKit-iOS Tests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Configs/ParkKitTests.plist;
@@ -1109,7 +790,6 @@
 		};
 		52D6D9E81BEFFF6E002C0205 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12FD070FFDA55F466503BBF7 /* Pods-ParkKit-watchOS.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1117,6 +797,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = Configs/ParkKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1132,7 +816,6 @@
 		};
 		52D6D9E91BEFFF6E002C0205 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE447F2029FBED12EDBBA91E /* Pods-ParkKit-watchOS.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1140,6 +823,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = Configs/ParkKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1156,7 +843,6 @@
 		};
 		52D6DA021BEFFFBE002C0205 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E76E9C8AF772C0CFDE8D946C /* Pods-ParkKit-tvOS.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1164,6 +850,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Configs/ParkKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1179,7 +869,6 @@
 		};
 		52D6DA031BEFFFBE002C0205 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F037450391BA9D520889090 /* Pods-ParkKit-tvOS.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1187,6 +876,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Configs/ParkKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1203,7 +896,6 @@
 		};
 		52D6DA211BF000BD002C0205 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DEEF804FE9CE41E53A76CFC /* Pods-ParkKit-macOS.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -1212,6 +904,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Configs/ParkKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1227,7 +923,6 @@
 		};
 		52D6DA221BF000BD002C0205 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 826E452924E68CBE54409058 /* Pods-ParkKit-macOS.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -1236,6 +931,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Configs/ParkKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1252,7 +951,6 @@
 		};
 		DD7502831C68FCFC006590AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DD56B198B18D45F52ECA34C /* Pods-ParkKit-macOS Tests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1268,7 +966,6 @@
 		};
 		DD7502841C68FCFC006590AF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7B96A78C485D7E7DE525EA6 /* Pods-ParkKit-macOS Tests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1285,7 +982,6 @@
 		};
 		DD7502961C690C7A006590AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40AF57F0B58FD1D794ADAB8D /* Pods-ParkKit-tvOS Tests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Configs/ParkKitTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1299,7 +995,6 @@
 		};
 		DD7502971C690C7A006590AF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36B07DD28CD54AF9919DB2A8 /* Pods-ParkKit-tvOS Tests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Configs/ParkKitTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
