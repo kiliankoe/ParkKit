@@ -22,5 +22,5 @@ Pod::Spec.new do |s|
 
   s.frameworks = "Foundation"
 
-  s.dependency 'ModelMapper', '6.0.0'
+  s.dependency 'Marshal', '1.2.4'
 end
