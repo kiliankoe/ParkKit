@@ -38,7 +38,8 @@ public struct ParkKit {
             var cities = [City]()
             for (_, details) in citiesDict {
                 guard let details = details as? NSDictionary else { continue }
-                guard let city = City.from(details) else { continue }
+//                guard let city = City.from(details) else { continue }
+                guard let city = try? City(object: details) else { continue }
                 cities.append(city)
             }
 
@@ -75,7 +76,8 @@ public struct ParkKit {
 
             var lots = [Lot]()
             for singleLot in lotsArr {
-                guard let lot = Lot.from(singleLot as NSDictionary) else { continue }
+//                guard let lot = Lot.from(singleLot as NSDictionary) else { continue }
+                guard let lot = try? Lot(object: singleLot) else { continue }
                 lots.append(lot)
             }
 
