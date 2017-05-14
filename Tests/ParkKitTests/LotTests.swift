@@ -42,7 +42,7 @@ class LotTests: XCTestCase {
         let loc = CLLocation()
 
         let lot1 = Lot(free: 0, total: 0, state: .open)
-        XCTAssertEqual(lot1.distance(from: loc), nil)
+        XCTAssertNil(lot1.distance(from: loc))
 
         let lot2 = Lot(free: 0, total: 0, state: .open, coord: CLLocationCoordinate2D())
         XCTAssertEqual(lot2.distance(from: loc), 0.0)
