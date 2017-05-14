@@ -55,4 +55,12 @@ class LotTests: XCTestCase {
         let lot2 = Lot(free: 100, total: 1000, state: .open)
         XCTAssertEqual(lot2.freeRegardingClosed, 100)
     }
+
+    static var allTests = {
+        return [
+            ("testLoadPercentage", testLoadPercentage),
+            ("testDistance", testDistance),
+            ("testFreeRegardingClosed", testFreeRegardingClosed),
+        ]
+    }
 }

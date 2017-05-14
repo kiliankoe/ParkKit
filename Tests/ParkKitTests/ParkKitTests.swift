@@ -67,11 +67,8 @@ class ParkKitTests: XCTestCase {
             }
         }
     }
-}
 
-#if os(Linux)
-extension ParkKitTests {
-    static var allTests : [(String, (ParkKitTests) -> () throws -> Void)] {
+    static var allTests = {
         return [
             ("testMeta", testMeta),
             ("testDresdenLots", testDresdenLots),
@@ -79,4 +76,3 @@ extension ParkKitTests {
         ]
     }
 }
-#endif
