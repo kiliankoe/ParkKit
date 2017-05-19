@@ -18,8 +18,8 @@ let park = ParkKit() // uses the default server at parkendd.de
 
 ```swift
 park.fetchCities { result in
-	guard let response = result.success else { return }
-	print(response.cities)
+    guard let response = result.success else { return }
+    print(response.cities)
 }
 
 // ▿ 13 elements
@@ -33,8 +33,8 @@ park.fetchCities { result in
 
 ```swift
 park.fetchLots(forCity: "Dresden") { result in
-	guard let response = result.success else { return }
-	print(response.lots)
+    guard let response = result.success else { return }
+    print(response.lots)
 }
 
 // ▿ 48 elements
@@ -48,8 +48,8 @@ let startingDate = Date()
 let endingDate = startingDate.addingTimeInterval(60 * 60 * 24) // 24 hours later
 
 park.fetchForecast(forLot: "dresdencentrumgalerie", inCity: "Dresden", startingAt: startingDate, endingAt: endingDate) { result in
-	guard let response = result.success else { return }
-	print(response.forecast)
+    guard let response = result.success else { return }
+    print(response.forecast)
 }
 
 // ▿ 97 elements
@@ -66,7 +66,7 @@ park.fetchForecast(forLot: "dresdencentrumgalerie", inCity: "Dresden", startingA
 
 Should you be hosting your own version of the ParkAPI server and using this on iOS, you might have to set up an ATS exception if you don't serve the data via HTTPS.
 
-Using your own server is definitely recommended should you be planning on executing a large amount of requests (e.g. through a multitude of client applications). 
+Using your own server is definitely recommended should you be planning on executing a large amount of requests (e.g. through a multitude of client applications).
 
 ## Installation
 
