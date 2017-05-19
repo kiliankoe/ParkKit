@@ -14,11 +14,14 @@ class ParkKitTests: XCTestCase {
     func testMeta() {
         let e = expectation(description: "Send a meta request")
 
-        ParkKit().fetchCities(onFailure: { error in
-            print(error)
-        }) { response in
-            XCTAssert(response.cities.count >= 13)
-            e.fulfill()
+        ParkKit().fetchCities { result in
+            switch result {
+            case let .failure(error):
+                XCTFail("Failed with error: \(error)")
+            case let .success(response):
+                XCTAssert(response.cities.count >= 13)
+                e.fulfill()
+            }
         }
 
         waitForExpectations(timeout: 5) { error in
@@ -31,11 +34,14 @@ class ParkKitTests: XCTestCase {
     func testDresdenLots() {
         let e = expectation(description: "Send a lot request for Dresden")
 
-        ParkKit().fetchLots(forCity: "Dresden", onFailure: { error in
-            print(error)
-        }) { response in
-            XCTAssert(response.lots.count > 0)
-            e.fulfill()
+        ParkKit().fetchLots(forCity: "Dresden") { result in
+            switch result {
+            case let .failure(error):
+                XCTFail("Failed with error: \(error)")
+            case let .success(response):
+                XCTAssert(response.lots.count > 0)
+                e.fulfill()
+            }
         }
 
         waitForExpectations(timeout: 5) { error in
@@ -54,11 +60,14 @@ class ParkKitTests: XCTestCase {
         let startingDate = df.date(from: "2015-12-26")!
         let endingDate = df.date(from: "2015-12-27")!
 
-        ParkKit().fetchForecast(forLot: "dresdencentrumgalerie", inCity: "Dresden", startingAt: startingDate, endingAt: endingDate, onFailure: { error in
-            print(error)
-        }) { response in
-            XCTAssert(response.forecast.count > 0)
-            e.fulfill()
+        ParkKit().fetchForecast(forLot: "dresdencentrumgalerie", inCity: "Dresden", startingAt: startingDate, endingAt: endingDate) { result in
+            switch result {
+            case let .failure(error):
+                XCTFail("Failed with error: \(error)")
+            case .success(_):
+                // The tests here don't have to be based on actual forecast data since the availability of that varies a bit^^
+                e.fulfill()
+            }
         }
 
         waitForExpectations(timeout: 5) { error in
