@@ -18,6 +18,10 @@
 		3965FA3F1ECED4CE0004EF55 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965FA3D1ECED4CE0004EF55 /* Result.swift */; };
 		3965FA401ECED4CE0004EF55 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965FA3D1ECED4CE0004EF55 /* Result.swift */; };
 		3965FA411ECED4CE0004EF55 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965FA3D1ECED4CE0004EF55 /* Result.swift */; };
+		3965FA431ECEF6430004EF55 /* Date+startOfToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965FA421ECEF6430004EF55 /* Date+startOfToday.swift */; };
+		3965FA441ECEF6430004EF55 /* Date+startOfToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965FA421ECEF6430004EF55 /* Date+startOfToday.swift */; };
+		3965FA451ECEF6430004EF55 /* Date+startOfToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965FA421ECEF6430004EF55 /* Date+startOfToday.swift */; };
+		3965FA461ECEF6430004EF55 /* Date+startOfToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965FA421ECEF6430004EF55 /* Date+startOfToday.swift */; };
 		398F9D251E1B284C002DFDB6 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D241E1B284C002DFDB6 /* City.swift */; };
 		398F9D261E1B284C002DFDB6 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D241E1B284C002DFDB6 /* City.swift */; };
 		398F9D271E1B284C002DFDB6 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F9D241E1B284C002DFDB6 /* City.swift */; };
@@ -82,6 +86,7 @@
 		390102DC1E1C03B100AF6DEA /* DateFormatter+format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateFormatter+format.swift"; path = "Sources/DateFormatter+format.swift"; sourceTree = "<group>"; };
 		3903AE731E265ED5001A8D87 /* LotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LotTests.swift; path = Tests/ParkKitTests/LotTests.swift; sourceTree = "<group>"; };
 		3965FA3D1ECED4CE0004EF55 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = "<group>"; };
+		3965FA421ECEF6430004EF55 /* Date+startOfToday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+startOfToday.swift"; path = "Sources/Date+startOfToday.swift"; sourceTree = "<group>"; };
 		398F9D241E1B284C002DFDB6 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = City.swift; path = Sources/City.swift; sourceTree = "<group>"; };
 		398F9D341E1B29A5002DFDB6 /* Lot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Lot.swift; path = Sources/Lot.swift; sourceTree = "<group>"; };
 		398F9D391E1B29E5002DFDB6 /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinate.swift; path = Sources/Coordinate.swift; sourceTree = "<group>"; };
@@ -183,6 +188,7 @@
 				398F9D241E1B284C002DFDB6 /* City.swift */,
 				398F9D341E1B29A5002DFDB6 /* Lot.swift */,
 				390102DC1E1C03B100AF6DEA /* DateFormatter+format.swift */,
+				3965FA421ECEF6430004EF55 /* Date+startOfToday.swift */,
 				3965FA3D1ECED4CE0004EF55 /* Result.swift */,
 				398F9D2E1E1B2940002DFDB6 /* Tests */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
@@ -527,6 +533,7 @@
 				390102DD1E1C03B100AF6DEA /* DateFormatter+format.swift in Sources */,
 				398F9D351E1B29A5002DFDB6 /* Lot.swift in Sources */,
 				398F9D3F1E1B2AC4002DFDB6 /* Response.swift in Sources */,
+				3965FA431ECEF6430004EF55 /* Date+startOfToday.swift in Sources */,
 				3965FA3E1ECED4CE0004EF55 /* Result.swift in Sources */,
 				398F9D3A1E1B29E5002DFDB6 /* Coordinate.swift in Sources */,
 			);
@@ -551,6 +558,7 @@
 				390102DF1E1C03B100AF6DEA /* DateFormatter+format.swift in Sources */,
 				398F9D371E1B29A5002DFDB6 /* Lot.swift in Sources */,
 				398F9D411E1B2AC4002DFDB6 /* Response.swift in Sources */,
+				3965FA451ECEF6430004EF55 /* Date+startOfToday.swift in Sources */,
 				3965FA401ECED4CE0004EF55 /* Result.swift in Sources */,
 				398F9D3C1E1B29E5002DFDB6 /* Coordinate.swift in Sources */,
 			);
@@ -566,6 +574,7 @@
 				390102E01E1C03B100AF6DEA /* DateFormatter+format.swift in Sources */,
 				398F9D381E1B29A5002DFDB6 /* Lot.swift in Sources */,
 				398F9D421E1B2AC4002DFDB6 /* Response.swift in Sources */,
+				3965FA461ECEF6430004EF55 /* Date+startOfToday.swift in Sources */,
 				3965FA411ECED4CE0004EF55 /* Result.swift in Sources */,
 				398F9D3D1E1B29E5002DFDB6 /* Coordinate.swift in Sources */,
 			);
@@ -581,6 +590,7 @@
 				390102DE1E1C03B100AF6DEA /* DateFormatter+format.swift in Sources */,
 				398F9D361E1B29A5002DFDB6 /* Lot.swift in Sources */,
 				398F9D401E1B2AC4002DFDB6 /* Response.swift in Sources */,
+				3965FA441ECEF6430004EF55 /* Date+startOfToday.swift in Sources */,
 				3965FA3F1ECED4CE0004EF55 /* Result.swift in Sources */,
 				398F9D3B1E1B29E5002DFDB6 /* Coordinate.swift in Sources */,
 			);

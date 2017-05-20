@@ -110,6 +110,45 @@ public struct ParkKit {
         }
     }
 
+    public enum Day {
+        case today
+        case offsetFromToday(Int)
+    }
+
+    /// Fetch forecast data for a given lot and city.
+    ///
+    /// - Parameters:
+    ///   - lot: lot identifier
+    ///   - city: city name
+    ///   - day: today or day specified via offset from today for which data is to be loaded from 00:00 to 23:59
+    ///   - completion: handler given a Result containing further information
+    public func fetchForecast(forLot lot: String, inCity city: String, forDay day: Day, completion: @escaping (Result<ForecastResponse>) -> Void) {
+        guard var startingDate = Date.startOfToday else { completion(Result(failure: ParkError.invalidDate)); return }
+
+        switch day {
+        case .today:
+            break
+        case let .offsetFromToday(offset):
+            startingDate = startingDate.addingTimeInterval(TimeInterval(offset * 24 * 60 * 60))
+        }
+
+        let endingDate = startingDate.addingTimeInterval((24 * 60 * 60) - 1)
+        fetchForecast(forLot: lot, inCity: city, startingAt: startingDate, endingAt: endingDate, completion: completion)
+    }
+
+    /// Fetch forecast data for a given lot and city.
+    ///
+    /// - Parameters:
+    ///   - lot: lot identifier
+    ///   - city: city name
+    ///   - day: `Date` somewhere inside the day for which data will be loaded from 00:00 to 23:59
+    ///   - completion: handler given a Result containing further information
+    public func fetchForecast(forLot lot: String, inCity city: String, forDay day: Date = Date(), completion: @escaping (Result<ForecastResponse>) -> Void) {
+        guard let startingDate = Date.startOfToday else { completion(Result(failure: ParkError.invalidDate)); return }
+        let endingDate = startingDate.addingTimeInterval((24 * 60 * 60) - 1)
+        fetchForecast(forLot: lot, inCity: city, startingAt: startingDate, endingAt: endingDate, completion: completion)
+    }
+
     internal func fetchJSON(url: URL, completion: @escaping (Result<JSON>) -> Void) {
         URLSession.shared.dataTask(with: url) { data, resp, err in
             guard err == nil else { completion(Result(failure: err!)); return }

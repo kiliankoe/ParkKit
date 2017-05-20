@@ -77,11 +77,31 @@ class ParkKitTests: XCTestCase {
         }
     }
 
+    func testDayForecast() {
+        let e = expectation(description: "Send a forecast request for a single day at Centrum Galerie in Dresden")
+
+        ParkKit().fetchForecast(forLot: "dresdencentrumgalerie", inCity: "Dresden", forDay: .offsetFromToday(0)) { result in
+            switch result {
+            case let .failure(error):
+                XCTFail("Failed with error: \(error)")
+            case .success(_):
+                e.fulfill()
+            }
+        }
+
+        waitForExpectations(timeout: 5) { error in
+            if let error = error {
+                XCTFail("\(error)")
+            }
+        }
+    }
+
     static var allTests = {
         return [
             ("testMeta", testMeta),
             ("testDresdenLots", testDresdenLots),
             ("testForecast", testForecast),
+            ("testDayForecast", testDayForecast),
         ]
     }
 }

@@ -15,6 +15,7 @@ import Foundation
 /// - invalidServerURL: The server URL is invalid.
 /// - notFound: There was no data to be found.
 /// - decoding: The data could not be decoded.
+/// - invalidDate: The date value is invalid.
 /// - unknown: Something very bad happened 😱
 public enum ParkError: Error {
     case request(Error?)
@@ -22,5 +23,6 @@ public enum ParkError: Error {
     case invalidServerURL
     case notFound
     case decoding
+    case invalidDate
     case unknown
 }
