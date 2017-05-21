@@ -44,12 +44,27 @@ park.fetchLots(forCity: "Dresden") { result in
 ```
 
 ```swift
-let startingDate = Date()
-let endingDate = startingDate.addingTimeInterval(60 * 60 * 24) // 24 hours later
+let centrum = "dresdencentrumgalerie"
+let dresden = "Dresden"
 
-park.fetchForecast(forLot: "dresdencentrumgalerie", inCity: "Dresden", startingAt: startingDate, endingAt: endingDate) { result in
+// Fetch forecast info for today
+park.fetchForecast(forLot: centrum, inCity: dresden) { result in
     guard let response = result.success else { return }
     print(response.forecast)
+}
+
+park.fetchForecast(forLot: centrum, inCity: dresden, forDay: .today) { _ in
+    // Same as above, `forDay` accepts either `.today`, `.offsetFromToday(Int)` 
+    // or any `Date` value which will be used to infer the day.
+}
+
+// You can also specify a custom start and end day if you want more than a single day's worth of data:
+
+let startingDate = Date()
+let endingDate = startingDate.addingTimeInterval(7 * 24 * 60 * 60) // one week from now
+
+park.fetchForecast(forLot: centrum, inCity: dresden, startingAt: startingDate, endingAt: endingDate) { _ in
+    // ...
 }
 
 // ▿ 97 elements
