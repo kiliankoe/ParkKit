@@ -7,15 +7,14 @@
 //
 
 import Foundation
-import Marshal
 import CoreLocation
 
 /// A parking lot, e.g. 🚗 🅿️ 🚙
-public struct Lot {
+public struct Lot: Decodable {
     /// Street address, if known.
     public let address: String?
     /// A specific coordinate, if known.
-    public let coordinate: CLLocationCoordinate2D?
+    public let coordinate: WGSCoordinate?
     /// True if forecast data is available for this lot. Can be fetched via ParkKit().fetchForecast
     public let hasForecast: Bool
     /// How many free parking spots are available.
@@ -39,14 +38,14 @@ public struct Lot {
     /// - closed: Closed, new arrivals can't park here.
     /// - nodata: The source provides no information.
     /// - unknown: Unknown. Like wat.
-    public enum State: String {
+    public enum State: String, Decodable {
         case open
         case closed
         case nodata
         case unknown
     }
 
-    /// Percentage value for how full the lot currently is
+    /// Percentage value for how full the lot currently is.
     public var loadPercentage: Double {
         if total > 0 {
             return 1 - Double(free) / Double(total)
@@ -64,26 +63,24 @@ public struct Lot {
         return location.distance(from: lotLocation)
     }
 
-    /// Small helper returning `free` or 0 if the lot is closed
+    /// The current number of free parking spaces or `0` if the lot is closed.
     public var freeRegardingClosed: Int {
         if state == .closed {
             return 0
         }
         return free
     }
-}
 
-extension Lot: Unmarshaling {
-    public init(object: MarshaledObject) throws {
-        address = try object <| "address"
-        coordinate = try object <| "coords"
-        hasForecast = try object <| "forecast"
-        free = try object <| "free"
-        total = try object <| "total"
-        id = try object <| "id"
-        type = try object <| "lot_type"
-        name = try object <| "name"
-        region = try object <| "region"
-        state = try object <| "state"
+    private enum CodingKeys: String, CodingKey {
+        case address
+        case coordinate = "coords"
+        case hasForecast = "forecast"
+        case free
+        case total
+        case id
+        case type = "lot_type"
+        case name
+        case region
+        case state
     }
 }
