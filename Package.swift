@@ -1,8 +1,21 @@
+// swift-tools-version:5.0
 import PackageDescription
 
 let package = Package(
     name: "ParkKit",
+    products: [
+        .library(
+            name: "ParkKit",
+            targets: ["ParkKit"]),
+    ],
     dependencies: [
-      .Package(url: "https://github.com/utahiosmac/Marshal", Version(1,2,4))
+    ],
+    targets: [
+        .target(
+            name: "ParkKit",
+            dependencies: []),
+        .testTarget(
+            name: "ParkKitTests",
+            dependencies: ["ParkKit"]),
     ]
 )
