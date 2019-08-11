@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import CoreLocation
 
 /// Slightly bigger than a town, you get the idea.
 public struct City: Decodable {

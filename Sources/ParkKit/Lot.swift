@@ -7,7 +7,9 @@
 //
 
 import Foundation
+#if canImport(CoreLocation)
 import CoreLocation
+#endif
 
 /// A parking lot, e.g. 🚗 🅿️ 🚙
 public struct Lot: Decodable {
@@ -53,6 +55,7 @@ public struct Lot: Decodable {
         return 0
     }
 
+    #if canImport(CoreLocation)
     /// Calculate the distance between this lot and a given location.
     ///
     /// - Parameter location: perhaps the user location?
@@ -62,6 +65,7 @@ public struct Lot: Decodable {
         let lotLocation = CLLocation(latitude: coord.latitude, longitude: coord.longitude)
         return location.distance(from: lotLocation)
     }
+    #endif
 
     /// The current number of free parking spaces or `0` if the lot is closed.
     public var freeRegardingClosed: Int {
