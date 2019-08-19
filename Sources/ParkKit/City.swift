@@ -12,8 +12,8 @@ public struct City: Decodable {
     public let url: URL
     /// Attribution information containing metadata, if known.
     public let attribution: Attribution?
-    /// True if the city is being actively supported (updated rather quickly if things break).
-    public let hasActiveSupport: Bool
+    /// True if the city is being actively supported (meaning it's updated rather quickly if things break).
+    public let isActivelySupported: Bool
 
     private enum CodingKeys: String, CodingKey {
         case name
@@ -21,7 +21,7 @@ public struct City: Decodable {
         case source
         case url
         case attribution
-        case hasActiveSupport = "active_support"
+        case isActivelySupported = "activeSupport"
     }
 
     /// Attribution information
@@ -32,11 +32,5 @@ public struct City: Decodable {
         let license: String
         /// URL to more legal information regarding the data.
         let url: URL
-
-        // private enum CodingKeys: String, CodingKey {
-        //     case contributor
-        //     case license
-        //     case url
-        // }
     }
 }
