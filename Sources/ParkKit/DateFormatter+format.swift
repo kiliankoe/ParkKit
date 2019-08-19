@@ -1,11 +1,3 @@
-//
-//  DateFormatter+format.swift
-//  ParkKit
-//
-//  Created by Kilian Költzsch on 03/01/2017.
-//  Copyright © 2017 Kilian Koeltzsch. All rights reserved.
-//
-
 import Foundation
 
 internal extension DateFormatter {

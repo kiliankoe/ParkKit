@@ -1,11 +1,3 @@
-//
-//  LotTests.swift
-//  ParkKit
-//
-//  Created by Kilian Költzsch on 11/01/2017.
-//  Copyright © 2017 Kilian Koeltzsch. All rights reserved.
-//
-
 import Foundation
 import XCTest
 import ParkKit

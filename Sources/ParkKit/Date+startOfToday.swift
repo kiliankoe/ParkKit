@@ -1,11 +1,3 @@
-//
-//  Date+startOfToday.swift
-//  ParkKit
-//
-//  Created by Kilian Költzsch on 19.05.17.
-//  Copyright © 2017 Kilian Koeltzsch. All rights reserved.
-//
-
 import Foundation
 
 extension Date {

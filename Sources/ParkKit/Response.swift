@@ -1,11 +1,3 @@
-//
-//  Response.swift
-//  ParkKit
-//
-//  Created by Kilian Költzsch on 03/01/2017.
-//  Copyright © 2017 Kilian Koeltzsch. All rights reserved.
-//
-
 import Foundation
 
 /// Meta response value containing a list of all supported cities supported by this server.
