@@ -4,8 +4,8 @@ import CoreLocation
 #endif
 
 public struct WGSCoordinate: Decodable {
-    let latitude: Double
-    let longitude: Double
+    public let latitude: Double
+    public let longitude: Double
 
     private enum CodingKeys: String, CodingKey {
         case latitude = "lat"
@@ -13,7 +13,7 @@ public struct WGSCoordinate: Decodable {
     }
 
     #if canImport(CoreLocation)
-    var coordinate2D: CLLocationCoordinate2D {
+    public var coordinate2D: CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
     #endif
