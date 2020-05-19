@@ -15,6 +15,7 @@ public enum ParkError: Error {
     case invalidServerURL
     case notFound
     case decoding
+    case json(DecodingError)
     case invalidDate
     case unknown
 }

@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.2
 import PackageDescription
 
 let package = Package(
@@ -14,12 +14,9 @@ let package = Package(
             name: "ParkKit",
             targets: ["ParkKit"]),
     ],
-    dependencies: [
-    ],
     targets: [
         .target(
-            name: "ParkKit",
-            dependencies: []),
+            name: "ParkKit"),
         .testTarget(
             name: "ParkKitTests",
             dependencies: ["ParkKit"]),
