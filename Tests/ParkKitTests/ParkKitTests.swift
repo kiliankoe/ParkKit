@@ -83,13 +83,4 @@ class ParkKitTests: XCTestCase {
 //            }
 //        }
 //    }
-//
-//    static var allTests = {
-//        return [
-//            ("testMeta", testMeta),
-//            ("testDresdenLots", testDresdenLots),
-//            ("testForecast", testForecast),
-//            ("testDayForecast", testDayForecast),
-//        ]
-//    }
 }
